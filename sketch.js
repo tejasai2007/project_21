@@ -8,6 +8,8 @@ function setup(){
   createCanvas(1600,800);
   
   bullet = createSprite(50,200,50,10);
+  bullet.velocityX = speed ;
+  
   wall = createSprite(1200,200,thickness,height/2);
   
   thickness = Math.round(random(22,83));
@@ -28,7 +30,7 @@ function draw(){
    damage = 0.5*weight*speed*speed/(thickness*thickness*thickness);
   
   
-  bullet.velocityX = speed ;
+  
   
   
   bullet.shapeColor = "brown"; 
